@@ -1,0 +1,476 @@
+---
+import Header from './layout/Header.astro';
+import Footer from './layout/Footer.astro';
+---
+
+<div class="perspective-container bg-[#080808] text-white">
+	<div class="relative">
+		<div class="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+			<div class="absolute right-[-10%] top-[-20%] h-[600px] w-[600px] rounded-full bg-white/5 blur-[120px]"></div>
+			<div class="absolute bottom-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-white/5 blur-[120px]"></div>
+		</div>
+
+		<div class="relative z-10">
+			<Header activeItem="blog" />
+
+			<section class="relative overflow-hidden px-8 pb-24 pt-48">
+				<div class="mx-auto w-full max-w-7xl">
+					<div class="scroll-zoom mb-12">
+						<span class="text-muted mb-4 block text-xs font-black uppercase tracking-[0.5em]">
+							EDITORIAL SELECTION
+						</span>
+						<h1 class="font-serif text-8xl font-semibold leading-[0.8] tracking-tighter md:text-[10vw]">
+							ARTI<span class="text-outline">CLES</span>
+						</h1>
+					</div>
+
+					<div class="scroll-zoom relative" style="transition-delay: 200ms;">
+						<a href="#" id="featured-blog-link" class="group block">
+							<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+								<div class="lg:col-span-7">
+									<div class="relative aspect-[16/10] overflow-hidden rounded-[2.5rem] bg-neutral-900">
+										<img
+											src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600"
+											alt="Featured Article"
+											class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+										/>
+										<div class="absolute left-8 top-8">
+											<span class="glass rounded-full px-6 py-2 text-[10px] font-black uppercase tracking-widest">
+												Featured
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex flex-col justify-center lg:col-span-5">
+									<div class="mb-6 flex items-center gap-4">
+										<span class="text-muted text-xs font-bold uppercase tracking-widest">Design Thinking</span>
+										<span class="h-1 w-1 rounded-full bg-white/20"></span>
+										<span class="text-muted text-xs font-bold uppercase tracking-widest">Oct 24, 2024</span>
+									</div>
+									<h2 class="font-serif mb-8 text-5xl leading-[1.1] transition-colors group-hover:text-white/70 md:text-6xl">
+										The Future of Neomorphism in Interface Design
+									</h2>
+									<p class="mb-10 max-w-md text-lg leading-relaxed text-gray-400">
+										Exploring how the subtle play of shadows and light is evolving into a more functional and accessible
+										design language for next-gen spatial OS.
+									</p>
+									<div class="flex items-center gap-4">
+										<div class="h-12 w-12 overflow-hidden rounded-full bg-neutral-800">
+											<img
+												src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=200"
+												alt="Author"
+												class="h-full w-full object-cover"
+											/>
+										</div>
+										<div>
+											<p class="text-xs font-black uppercase tracking-widest">Marcus Vancy</p>
+											<p class="text-muted text-[10px]">8 min read</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="px-8 py-24">
+				<div class="mx-auto max-w-7xl">
+					<div class="scroll-zoom mb-20 flex flex-col items-center justify-between gap-8 md:flex-row">
+						<div class="flex flex-wrap items-center gap-3">
+							<button
+								class="category-btn active rounded-full border border-white/10 px-6 py-3 text-[10px] font-black uppercase tracking-widest"
+								type="button"
+								data-category="all"
+							>
+								All Posts
+							</button>
+							<button
+								class="category-btn rounded-full border border-white/10 px-6 py-3 text-[10px] font-black uppercase tracking-widest"
+								type="button"
+								data-category="design"
+							>
+								Design
+							</button>
+							<button
+								class="category-btn rounded-full border border-white/10 px-6 py-3 text-[10px] font-black uppercase tracking-widest"
+								type="button"
+								data-category="development"
+							>
+								Development
+							</button>
+							<button
+								class="category-btn rounded-full border border-white/10 px-6 py-3 text-[10px] font-black uppercase tracking-widest"
+								type="button"
+								data-category="trends"
+							>
+								Trends
+							</button>
+							<button
+								class="category-btn rounded-full border border-white/10 px-6 py-3 text-[10px] font-black uppercase tracking-widest"
+								type="button"
+								data-category="process"
+							>
+								Process
+							</button>
+						</div>
+
+						<div class="group relative w-full md:w-80">
+							<iconify-icon
+								icon="lucide:search"
+								class="text-muted absolute left-4 top-1/2 -translate-y-1/2"
+							></iconify-icon>
+							<input
+								type="text"
+								placeholder="Search articles..."
+								class="glass w-full rounded-full py-4 pl-12 pr-6 text-xs font-bold tracking-widest outline-none transition-all focus:border-white/30"
+								data-blog-search
+							/>
+						</div>
+					</div>
+
+					<div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-16" data-blog-grid>
+						<a
+							href="#"
+							class="scroll-zoom group block"
+							data-post
+							data-category="process"
+							data-title="Scaling Design Systems for Global Enterprise"
+							data-description="How to maintain consistency across thousands of pages and hundreds of unique digital products."
+						>
+							<div class="relative mb-8 aspect-3/2 overflow-hidden rounded-3xl transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]">
+								<img
+									src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=800"
+									alt="Blog"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div class="absolute left-6 top-6">
+									<span class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black">
+										Process
+									</span>
+								</div>
+							</div>
+							<h3 class="font-serif mb-4 text-3xl group-hover:underline">Scaling Design Systems for Global Enterprise</h3>
+							<p class="mb-6 text-sm text-gray-500">
+								How to maintain consistency across thousands of pages and hundreds of unique digital products.
+							</p>
+							<span class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+								Read Article <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+							</span>
+						</a>
+
+						<a
+							href="#"
+							class="scroll-zoom group block"
+							style="transition-delay: 100ms;"
+							data-post
+							data-category="development"
+							data-title="Optimizing React Performance for Visual Heaviness"
+							data-description="Technical strategies for handling complex animations and high-res imagery without lag."
+						>
+							<div class="relative mb-8 aspect-3/2 overflow-hidden rounded-3xl transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]">
+								<img
+									src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+									alt="Blog"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div class="absolute left-6 top-6">
+									<span class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black">
+										Development
+									</span>
+								</div>
+							</div>
+							<h3 class="font-serif mb-4 text-3xl group-hover:underline">Optimizing React Performance for Visual Heaviness</h3>
+							<p class="mb-6 text-sm text-gray-500">
+								Technical strategies for handling complex animations and high-res imagery without lag.
+							</p>
+							<span class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+								Read Article <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+							</span>
+						</a>
+
+						<a
+							href="#"
+							class="scroll-zoom group block"
+							style="transition-delay: 200ms;"
+							data-post
+							data-category="design"
+							data-title="Minimalism: The Art of Knowing What to Remove"
+							data-description="Exploring why the most impactful interfaces are often the ones with the fewest elements."
+						>
+							<div class="relative mb-8 aspect-3/2 overflow-hidden rounded-3xl transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]">
+								<img
+									src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&q=80&w=800"
+									alt="Blog"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div class="absolute left-6 top-6">
+									<span class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black">
+										Design
+									</span>
+								</div>
+							</div>
+							<h3 class="font-serif mb-4 text-3xl group-hover:underline">Minimalism: The Art of Knowing What to Remove</h3>
+							<p class="mb-6 text-sm text-gray-500">
+								Exploring why the most impactful interfaces are often the ones with the fewest elements.
+							</p>
+							<span class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+								Read Article <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+							</span>
+						</a>
+
+						<a
+							href="#"
+							class="scroll-zoom group block"
+							data-post
+							data-category="trends"
+							data-title="Web Animation API vs Framer Motion in 2024"
+							data-description="A deep dive into which animation library reigns supreme for modern high-end web experiences."
+						>
+							<div class="relative mb-8 aspect-3/2 overflow-hidden rounded-3xl transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]">
+								<img
+									src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
+									alt="Blog"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div class="absolute left-6 top-6">
+									<span class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black">
+										Trends
+									</span>
+								</div>
+							</div>
+							<h3 class="font-serif mb-4 text-3xl group-hover:underline">Web Animation API vs Framer Motion in 2024</h3>
+							<p class="mb-6 text-sm text-gray-500">
+								A deep dive into which animation library reigns supreme for modern high-end web experiences.
+							</p>
+							<span class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+								Read Article <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+							</span>
+						</a>
+
+						<a
+							href="#"
+							class="scroll-zoom group block"
+							style="transition-delay: 100ms;"
+							data-post
+							data-category="process"
+							data-title="The Real Business Value of Design Thinking"
+							data-description="Moving beyond aesthetics to solve actual business problems and improve conversion rates."
+						>
+							<div class="relative mb-8 aspect-3/2 overflow-hidden rounded-3xl transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]">
+								<img
+									src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
+									alt="Blog"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div class="absolute left-6 top-6">
+									<span class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black">
+										Process
+									</span>
+								</div>
+							</div>
+							<h3 class="font-serif mb-4 text-3xl group-hover:underline">The Real Business Value of Design Thinking</h3>
+							<p class="mb-6 text-sm text-gray-500">
+								Moving beyond aesthetics to solve actual business problems and improve conversion rates.
+							</p>
+							<span class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+								Read Article <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+							</span>
+						</a>
+
+						<a
+							href="#"
+							class="scroll-zoom group block"
+							style="transition-delay: 200ms;"
+							data-post
+							data-category="design"
+							data-title="Typography as the Soul of Digital Products"
+							data-description="Choosing the right font pairings to establish brand identity and emotional connection."
+						>
+							<div class="relative mb-8 aspect-3/2 overflow-hidden rounded-3xl transition-transform duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]">
+								<img
+									src="https://images.unsplash.com/photo-1543167601-5219353412c0?auto=format&fit=crop&q=80&w=800"
+									alt="Blog"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div class="absolute left-6 top-6">
+									<span class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black">
+										Design
+									</span>
+								</div>
+							</div>
+							<h3 class="font-serif mb-4 text-3xl group-hover:underline">Typography as the Soul of Digital Products</h3>
+							<p class="mb-6 text-sm text-gray-500">
+								Choosing the right font pairings to establish brand identity and emotional connection.
+							</p>
+							<span class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest">
+								Read Article <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+							</span>
+						</a>
+					</div>
+
+					<div class="scroll-zoom mt-32 flex justify-center">
+						<div class="flex items-center gap-4">
+							<button
+								id="prev-page-btn"
+								type="button"
+								class="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 transition-all hover:bg-white hover:text-black"
+							>
+								<iconify-icon icon="lucide:chevron-left"></iconify-icon>
+							</button>
+							<div class="flex items-center gap-2">
+								<span class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-xs font-black text-black">1</span>
+								<span class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-xs font-black transition-all hover:bg-white/10">2</span>
+								<span class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-xs font-black transition-all hover:bg-white/10">3</span>
+							</div>
+							<button
+								id="next-page-btn"
+								type="button"
+								class="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 transition-all hover:bg-white hover:text-black"
+							>
+								<iconify-icon icon="lucide:chevron-right"></iconify-icon>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<Footer />
+</div>
+
+<script is:inline>
+	let ticking = false;
+	const activated = new WeakSet();
+
+	function activate(el, delayMs = 0) {
+		if (!(el instanceof HTMLElement)) return;
+		if (activated.has(el)) return;
+		activated.add(el);
+		el.style.transitionDelay = `${delayMs}ms`;
+		el.classList.add('active');
+	}
+
+	const revealObserver = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) activate(entry.target, 0);
+			});
+		},
+		{ threshold: 0.05, rootMargin: '0px 0px -50px 0px' },
+	);
+
+	document.querySelectorAll('.scroll-zoom').forEach((el) => revealObserver.observe(el));
+
+	function revealOnLoad() {
+		const vh = window.innerHeight;
+		const els = Array.from(document.querySelectorAll('.scroll-zoom'));
+		let i = 0;
+		for (const el of els) {
+			const rect = el.getBoundingClientRect();
+			const inView = rect.bottom > 0 && rect.top < vh * 0.95;
+			if (!inView) continue;
+			activate(el, i * 70);
+			i += 1;
+		}
+	}
+
+	function update3D() {
+		const scrollY = window.pageYOffset;
+		const vh = window.innerHeight;
+
+		document.querySelectorAll('.scroll-zoom').forEach((el) => {
+			const rect = el.getBoundingClientRect();
+
+			let progress = (vh - rect.top) / (vh * 0.7);
+			progress = Math.min(Math.max(progress, 0), 1);
+
+			const scale = 0.7 + progress * 0.3;
+			const z = -500 + progress * 500;
+			const y = 100 * (1 - progress);
+			const rot = 15 * (1 - progress);
+
+			let transform = `perspective(1500px) translate3d(0, ${y}px, ${z}px) scale(${scale}) rotateX(${rot}deg)`;
+			el.style.transform = transform;
+			el.style.opacity = Math.min(progress * 1.5, 1);
+		});
+
+		document.querySelectorAll('.parallax-layer').forEach((layer) => {
+			const speed = Number.parseFloat(layer.getAttribute('data-speed')) || 0.1;
+			layer.style.transform = `translate3d(0, ${scrollY * speed}px, 0)`;
+		});
+
+		const nav = document.querySelector('[data-site-nav]');
+		const navInner = document.querySelector('[data-site-nav-inner]');
+		if (nav instanceof HTMLElement && navInner instanceof HTMLElement) {
+			if (scrollY > 100) {
+				nav.classList.remove('mix-blend-difference');
+				nav.classList.add('bg-[#080808]/90', 'backdrop-blur-md');
+				navInner.classList.remove('py-10');
+				navInner.classList.add('py-6');
+			} else {
+				nav.classList.add('mix-blend-difference');
+				nav.classList.remove('bg-[#080808]/90', 'backdrop-blur-md');
+				navInner.classList.add('py-10');
+				navInner.classList.remove('py-6');
+			}
+		}
+
+		ticking = false;
+	}
+
+	// Blog filtering + search
+	const categoryButtons = Array.from(document.querySelectorAll('[data-category]'));
+	const posts = Array.from(document.querySelectorAll('[data-post]'));
+	const searchInput = document.querySelector('[data-blog-search]');
+	let activeCategory = 'all';
+	let query = '';
+
+	function normalize(s) {
+		return (s || '').toLowerCase().trim();
+	}
+
+	function applyBlogFilter() {
+		for (const btn of categoryButtons) {
+			btn.classList.toggle('active', btn.getAttribute('data-category') === activeCategory);
+		}
+
+		for (const el of posts) {
+			const cat = el.getAttribute('data-category') || '';
+			const title = el.getAttribute('data-title') || '';
+			const desc = el.getAttribute('data-description') || '';
+			const matchesCategory = activeCategory === 'all' || cat === activeCategory;
+			const hay = normalize(`${title} ${desc} ${cat}`);
+			const matchesQuery = !query || hay.includes(query);
+			el.style.display = matchesCategory && matchesQuery ? '' : 'none';
+		}
+	}
+
+	for (const btn of categoryButtons) {
+		btn.addEventListener('click', () => {
+			activeCategory = btn.getAttribute('data-category') || 'all';
+			applyBlogFilter();
+		});
+	}
+
+	if (searchInput instanceof HTMLInputElement) {
+		searchInput.addEventListener('input', () => {
+			query = normalize(searchInput.value);
+			applyBlogFilter();
+		});
+	}
+
+	window.addEventListener('scroll', () => {
+		if (!ticking) {
+			window.requestAnimationFrame(update3D);
+			ticking = true;
+		}
+	});
+
+	requestAnimationFrame(revealOnLoad);
+	update3D();
+	applyBlogFilter();
+</script>
+

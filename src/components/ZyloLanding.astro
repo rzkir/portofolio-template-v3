@@ -1,0 +1,583 @@
+---
+import Header from "./layout/Header.astro";
+import Footer from "./layout/Footer.astro";
+---
+
+<div class="perspective-container bg-[#080808] text-white">
+  <div class="relative">
+    <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+      <div
+        class="absolute right-[-10%] top-[-20%] h-[600px] w-[600px] rounded-full bg-white/5 blur-[120px]"
+      >
+      </div>
+      <div
+        class="absolute bottom-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-white/5 blur-[120px]"
+      >
+      </div>
+    </div>
+
+    <div class="relative z-10">
+      <Header
+        activeItem="home"
+        brandHref="#home"
+        homeHref="#home"
+        aboutHref="#about"
+        worksHref="#works"
+        blogHref="#blog"
+        contactHref="#contact"
+      />
+
+  <section
+    id="home"
+    class="relative flex min-h-screen flex-col justify-center overflow-hidden px-8"
+  >
+    <div class="mx-auto w-full max-w-7xl pt-32">
+      <div class="relative">
+        <h1
+          class="scroll-zoom scroll-depth font-serif text-[12vw] font-semibold leading-[0.8] tracking-tighter"
+          data-depth="0.2"
+        >
+          INSPIRE
+        </h1>
+
+        <div
+          class="mt-8 flex flex-col items-end justify-between md:mt-0 md:flex-row"
+        >
+          <div
+            class="scroll-zoom mb-10 w-full md:mb-0 md:w-1/3"
+            style="transition-delay: 100ms;"
+          >
+            <p
+              class="text-muted mb-6 text-sm font-bold uppercase tracking-widest"
+            >
+              ● OUR PORTFOLIO
+            </p>
+            <h2 class="font-serif mb-6 text-4xl md:text-5xl">
+              We Provide Best Business Solution in Town
+            </h2>
+            <p class="mb-8 max-w-xs text-sm leading-relaxed text-gray-400">
+              Crafting digital experiences that empower brands to achieve
+              excellence through innovative design and strategy.
+            </p>
+            <a
+              href="#about"
+              id="hero-cta-about"
+              class="group flex items-center gap-4 text-xs font-bold uppercase tracking-widest"
+            >
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-all group-hover:bg-white group-hover:text-black"
+              >
+                <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+              </span>
+              About The Company
+            </a>
+          </div>
+
+          <div
+            class="perspective-container relative flex flex-1 justify-center"
+          >
+            <div
+              class="scroll-zoom relative w-full max-w-lg"
+              style="transition-delay: 300ms;"
+            >
+              <div
+                class="glass floating-3d parallax-layer absolute -right-8 -top-16 z-30 flex h-40 w-40 items-center justify-center rounded-full"
+                data-speed="-0.1"
+              >
+                <span
+                  class="text-center text-[10px] font-bold uppercase leading-tight tracking-widest"
+                >
+                  Contact<br />Now
+                </span>
+              </div>
+              <div
+                class="parallax-layer relative z-10 aspect-4/5 overflow-hidden rounded-2xl bg-neutral-900"
+                data-speed="0.05"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+                  alt="Hero Image Main"
+                  class="h-full w-full scale-110 object-cover"
+                />
+              </div>
+              <div
+                class="parallax-layer absolute -bottom-10 -left-20 z-20 hidden h-80 w-64 overflow-hidden rounded-2xl shadow-2xl lg:block"
+                data-speed="0.15"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800"
+                  alt="Hero Image Detail"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="scroll-zoom scroll-depth w-full pt-10 md:w-1/4 md:pt-0"
+            data-depth="-0.1"
+            style="transition-delay: 200ms;"
+          >
+            <div class="flex flex-col items-end text-right">
+              <span class="font-serif mb-2 text-5xl">
+                14k <span class="text-sm text-gray-500">+</span>
+              </span>
+              <span
+                class="text-muted text-xs font-bold uppercase tracking-widest"
+                >Project Success</span
+              >
+              <p class="mt-4 text-[10px] leading-relaxed text-gray-500">
+                Effort to accurately review everything about<br />your business
+                and your industry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h1
+          class="scroll-zoom scroll-depth font-serif mt-[-4vw] text-right text-[12vw] font-semibold leading-[0.8] tracking-tighter"
+          data-depth="0.4"
+          style="transition-delay: 400ms;"
+        >
+          PROGRESS
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="relative z-10 overflow-hidden border-y border-white/5 bg-black py-20"
+  >
+    <div class="animate-marquee flex whitespace-nowrap">
+      <div class="flex items-center gap-10 px-10">
+        <span class="font-serif text-5xl italic">UX / UI DESIGN</span>
+        <span class="h-3 w-3 rounded-full bg-white"></span>
+        <span class="text-outline font-serif text-5xl italic">CREATIVE</span>
+        <span class="h-3 w-3 rounded-full bg-white"></span>
+        <span class="font-serif text-5xl italic">DEVELOPMENT</span>
+        <span class="h-3 w-3 rounded-full bg-white"></span>
+        <span class="text-outline font-serif text-5xl italic">STRATEGY</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="perspective-container px-8 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div
+        class="scroll-zoom rounded-3xl border border-white/5 bg-white/5 p-12"
+      >
+        <span
+          class="text-muted mb-4 block text-xs font-bold uppercase tracking-[0.3em]"
+          >ABOUT</span
+        >
+        <h2 class="font-serif mb-6 text-6xl">Creative direction with depth.</h2>
+        <p class="max-w-2xl text-sm leading-relaxed text-gray-400">
+          We blend strategy, design, and development into immersive
+          experiences—built for modern brands that want to stand out and scale.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="perspective-container px-8 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="scroll-zoom mb-20 flex items-end justify-between">
+        <div>
+          <span
+            class="text-muted mb-4 block text-xs font-bold uppercase tracking-[0.3em]"
+          >
+            OUR PORTFOLIO
+          </span>
+          <h2 class="font-serif text-6xl">Selected Works</h2>
+        </div>
+        <a
+          href="#"
+          id="view-all-works-btn"
+          class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest transition-all hover:opacity-50"
+        >
+          All View Work
+          <span
+            class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10"
+          >
+            <iconify-icon icon="lucide:arrow-up-right"></iconify-icon>
+          </span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-12">
+        <div class="scroll-zoom md:col-span-8">
+          <a href="#" id="work-1-link" class="group block">
+            <div
+              class="hover-card relative overflow-hidden rounded-3xl bg-neutral-900"
+            >
+              <div class="aspect-video w-full">
+                <img
+                  src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&q=80&w=1600"
+                  alt="Work Card Main"
+                  class="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
+                />
+              </div>
+              <div
+                class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/80 via-transparent to-transparent p-10 opacity-0 transition-opacity group-hover:opacity-100"
+              >
+                <p
+                  class="mb-2 text-xs font-bold uppercase tracking-widest text-white/60"
+                >
+                  Fintech App • 2024
+                </p>
+                <h3 class="font-serif text-4xl">
+                  Etherium Financial Ecosystem
+                </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-10 md:col-span-4">
+          <div class="scroll-zoom" style="transition-delay: 200ms;">
+            <a href="#" id="work-2-link" class="group block">
+              <div
+                class="hover-card relative overflow-hidden rounded-3xl bg-neutral-900"
+              >
+                <div class="aspect-square w-full">
+                  <img
+                    src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800"
+                    alt="Work Card Sub 1"
+                    class="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                  />
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full bg-linear-to-t from-black/60 to-transparent p-6"
+                >
+                  <h3 class="font-serif text-xl">Modular Workspace</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="scroll-zoom" style="transition-delay: 400ms;">
+            <a href="#" id="work-3-link" class="group block">
+              <div
+                class="hover-card relative overflow-hidden rounded-3xl bg-neutral-900"
+              >
+                <div class="aspect-square w-full">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                    alt="Work Card Sub 2"
+                    class="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                  />
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full bg-linear-to-t from-black/60 to-transparent p-6"
+                >
+                  <h3 class="font-serif text-xl">Analytics Dashboard</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden bg-white/5 px-8 py-48">
+    <div class="perspective-container mx-auto max-w-7xl text-center">
+      <h2
+        class="scroll-zoom scroll-rotate font-serif text-7xl leading-none tracking-tighter md:text-[12vw]"
+        data-rotate="15"
+      >
+        OUR <span class="text-outline">PORTFOLIO</span>
+      </h2>
+    </div>
+  </section>
+
+  <section id="blog" class="perspective-container px-8 py-32">
+    <div class="mx-auto max-w-7xl">
+      <div
+        class="scroll-zoom mb-20 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end"
+      >
+        <div>
+          <span
+            class="text-muted mb-4 block text-xs font-bold uppercase tracking-widest"
+          >
+            OUR ARTICLES
+          </span>
+          <h2 class="font-serif text-6xl">News & Insight</h2>
+        </div>
+        <p class="max-w-sm text-sm leading-relaxed text-gray-400">
+          Sharing our experience and thought about design and digital trends to
+          help you grow your brand.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-20 md:grid-cols-2">
+        <div class="scroll-zoom">
+          <a href="#" id="blog-1-link" class="group block">
+            <div
+              class="hover-card relative mb-8 aspect-3/2 overflow-hidden rounded-3xl"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800"
+                alt="Blog Cover 1"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute left-6 top-6">
+                <span
+                  class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black"
+                >
+                  Trends
+                </span>
+              </div>
+            </div>
+            <h3 class="font-serif mb-4 text-3xl group-hover:underline">
+              Effective Retail Marketing Strategies in 2024
+            </h3>
+            <p class="mb-6 text-sm text-gray-500">
+              Take time and effort to accurately review everything about your
+              business and your industry.
+            </p>
+            <span
+              class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest"
+            >
+              Read Article <iconify-icon icon="lucide:arrow-right"
+              ></iconify-icon>
+            </span>
+          </a>
+        </div>
+        <div class="scroll-zoom" style="transition-delay: 300ms;">
+          <a href="#" id="blog-2-link" class="group block">
+            <div
+              class="hover-card relative mb-8 aspect-3/2 overflow-hidden rounded-3xl"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800"
+                alt="Blog Cover 2"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute left-6 top-6">
+                <span
+                  class="rounded-full bg-white px-4 py-2 text-[10px] font-black uppercase tracking-widest text-black"
+                >
+                  Process
+                </span>
+              </div>
+            </div>
+            <h3 class="font-serif mb-4 text-3xl group-hover:underline">
+              Efficient Account Workflow Solutions
+            </h3>
+            <p class="mb-6 text-sm text-gray-500">
+              Streamlining complex processes into simple, intuitive digital
+              workflows that increase productivity.
+            </p>
+            <span
+              class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest"
+            >
+              Read Article <iconify-icon icon="lucide:arrow-right"
+              ></iconify-icon>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="relative z-10 bg-white px-8 py-32 text-black">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 gap-20 md:grid-cols-2">
+        <div class="scroll-zoom">
+          <h2 class="font-serif mb-12 text-8xl leading-[0.9] tracking-tighter">
+            Let's create something great.
+          </h2>
+          <div class="space-y-6">
+            <div>
+              <p
+                class="mb-1 text-[10px] font-black uppercase tracking-widest text-black/40"
+              >
+                Email us
+              </p>
+              <a
+                href="mailto:hello@zylo.com"
+                id="contact-email-link"
+                class="font-serif border-b border-black text-3xl transition-opacity hover:opacity-60"
+              >
+                hello@zylo.com
+              </a>
+            </div>
+            <div>
+              <p
+                class="mb-1 text-[10px] font-black uppercase tracking-widest text-black/40"
+              >
+                Call us
+              </p>
+              <a
+                href="tel:+1234567890"
+                id="contact-phone-link"
+                class="font-serif border-b border-black text-3xl transition-opacity hover:opacity-60"
+              >
+                +1 234 567 890
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="scroll-zoom flex flex-col justify-end"
+          style="transition-delay: 200ms;"
+        >
+          <form class="space-y-8">
+            <div class="border-b border-black pb-4">
+              <label class="text-[10px] font-black uppercase tracking-widest"
+                >What's your name?</label
+              >
+              <input
+                type="text"
+                placeholder="John Doe"
+                class="font-serif w-full bg-transparent py-2 text-xl outline-none placeholder:text-black/20"
+              />
+            </div>
+            <div class="border-b border-black pb-4">
+              <label class="text-[10px] font-black uppercase tracking-widest"
+                >Your email address</label
+              >
+              <input
+                type="email"
+                placeholder="john@company.com"
+                class="font-serif w-full bg-transparent py-2 text-xl outline-none placeholder:text-black/20"
+              />
+            </div>
+            <div class="border-b border-black pb-4">
+              <label class="text-[10px] font-black uppercase tracking-widest"
+                >Tell us about your project</label
+              >
+              <textarea
+                placeholder="I have a big idea..."
+                class="font-serif h-32 w-full resize-none bg-transparent py-2 text-xl outline-none placeholder:text-black/20"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="rounded-full bg-black px-12 py-5 font-black uppercase tracking-widest text-white transition-transform hover:scale-105"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+  </div>
+
+  <Footer />
+</div>
+
+<script is:inline>
+  let ticking = false;
+  const activated = new WeakSet();
+
+  function activate(el, delayMs = 0) {
+    if (!(el instanceof HTMLElement)) return;
+    if (activated.has(el)) return;
+    activated.add(el);
+    el.style.transitionDelay = `${delayMs}ms`;
+    el.classList.add("active");
+  }
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) activate(entry.target, 0);
+      });
+    },
+    { threshold: 0.05, rootMargin: "0px 0px -50px 0px" },
+  );
+
+  document
+    .querySelectorAll(".scroll-zoom")
+    .forEach((el) => revealObserver.observe(el));
+
+  function revealOnLoad() {
+    const vh = window.innerHeight;
+    const els = Array.from(document.querySelectorAll(".scroll-zoom"));
+    let i = 0;
+    for (const el of els) {
+      const rect = el.getBoundingClientRect();
+      const inView = rect.bottom > 0 && rect.top < vh * 0.95;
+      if (!inView) continue;
+      activate(el, i * 70);
+      i += 1;
+    }
+  }
+
+  function update3D() {
+    const scrollY = window.pageYOffset;
+    const vh = window.innerHeight;
+
+    document.querySelectorAll(".scroll-zoom").forEach((el) => {
+      const rect = el.getBoundingClientRect();
+
+      let progress = (vh - rect.top) / (vh * 0.7);
+      progress = Math.min(Math.max(progress, 0), 1);
+
+      const scale = 0.7 + progress * 0.3;
+      const z = -500 + progress * 500;
+      const y = 100 * (1 - progress);
+      const rot = 15 * (1 - progress);
+
+      let transform = `perspective(1500px) translate3d(0, ${y}px, ${z}px) scale(${scale}) rotateX(${rot}deg)`;
+
+      if (el.classList.contains("scroll-depth")) {
+        const depth = Number.parseFloat(el.getAttribute("data-depth")) || 0.1;
+        const xOffset = scrollY * depth;
+        transform += ` translate3d(${xOffset}px, 0, 0)`;
+      }
+
+      if (el.classList.contains("scroll-rotate")) {
+        const scrollPercent = (vh - rect.top) / vh;
+        if (scrollPercent > 0 && scrollPercent < 2) {
+          const maxRotate = Number.parseFloat(el.getAttribute("data-rotate")) || 20;
+          const currentRotate = (scrollPercent - 0.5) * maxRotate;
+          const zoomScale = 0.8 + scrollPercent * 0.2;
+          transform += ` scale(${zoomScale}) perspective(1000px) rotateX(${currentRotate}deg)`;
+        }
+      }
+
+      el.style.transform = transform;
+      el.style.opacity = Math.min(progress * 1.5, 1);
+    });
+
+    document.querySelectorAll(".parallax-layer").forEach((layer) => {
+      const speed = Number.parseFloat(layer.getAttribute("data-speed")) || 0.1;
+      layer.style.transform = `translate3d(0, ${scrollY * speed}px, 0)`;
+    });
+
+    // NOTE: rotate + depth transforms are composed in the loop above
+
+    const nav = document.querySelector("[data-site-nav]");
+    const navInner = document.querySelector("[data-site-nav-inner]");
+    if (nav instanceof HTMLElement && navInner instanceof HTMLElement) {
+      if (scrollY > 100) {
+        nav.classList.remove("mix-blend-difference");
+        nav.classList.add("bg-[#080808]/90", "backdrop-blur-md");
+        navInner.classList.remove("py-10");
+        navInner.classList.add("py-6");
+      } else {
+        nav.classList.add("mix-blend-difference");
+        nav.classList.remove("bg-[#080808]/90", "backdrop-blur-md");
+        navInner.classList.add("py-10");
+        navInner.classList.remove("py-6");
+      }
+    }
+
+    ticking = false;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(update3D);
+      ticking = true;
+    }
+  });
+
+  // initial reveal (stagger)
+  requestAnimationFrame(revealOnLoad);
+  update3D();
+</script>

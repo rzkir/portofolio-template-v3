@@ -1,0 +1,491 @@
+{
+  "brand": {
+    "name": "Zylo",
+    "copyrightYear": "2024"
+  },
+  "landing": {
+    "hero": {
+      "kicker": "● OUR PORTFOLIO",
+      "titleTop": "INSPIRE",
+      "titleBottom": "PROGRESS",
+      "headline": "We Provide Best Business Solution in Town",
+      "description": "Crafting digital experiences that empower brands to achieve excellence through innovative design and strategy.",
+      "ctaLabel": "About The Company",
+      "images": {
+        "main": {
+          "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Hero Image Main"
+        },
+        "detail": {
+          "src": "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800",
+          "alt": "Hero Image Detail"
+        }
+      },
+      "stats": {
+        "value": "14k",
+        "suffix": "+",
+        "label": "Project Success",
+        "note": "Effort to accurately review everything about\nyour business and your industry."
+      }
+    },
+    "marquee": ["UX / UI DESIGN", "CREATIVE", "DEVELOPMENT", "STRATEGY"],
+    "about": {
+      "kicker": "ABOUT",
+      "title": "Creative direction with depth.",
+      "description": "We blend strategy, design, and development into immersive experiences—built for modern brands that want to stand out and scale."
+    },
+    "works": {
+      "kicker": "OUR PORTFOLIO",
+      "title": "Selected Works",
+      "ctaLabel": "All View Work",
+      "items": [
+        {
+          "id": "etherium",
+          "layout": "large",
+          "href": "#",
+          "imageSrc": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&q=80&w=1600",
+          "imageAlt": "Work Card Main",
+          "meta": "Fintech App • 2024",
+          "title": "Etherium Financial Ecosystem"
+        },
+        {
+          "id": "workspace",
+          "layout": "small",
+          "href": "#",
+          "imageSrc": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Work Card Sub 1",
+          "title": "Modular Workspace"
+        },
+        {
+          "id": "analytics",
+          "layout": "small",
+          "href": "#",
+          "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Work Card Sub 2",
+          "title": "Analytics Dashboard"
+        }
+      ]
+    },
+    "portfolioBanner": {
+      "textLeft": "OUR",
+      "textRight": "PORTFOLIO",
+      "rotate": 15
+    },
+    "blog": {
+      "kicker": "OUR ARTICLES",
+      "title": "News & Insight",
+      "description": "Sharing our experience and thought about design and digital trends to help you grow your brand.",
+      "items": [
+        {
+          "id": "retail-marketing",
+          "href": "#",
+          "imageSrc": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Blog Cover 1",
+          "tag": "Trends",
+          "title": "Effective Retail Marketing Strategies in 2024",
+          "excerpt": "Take time and effort to accurately review everything about your business and your industry."
+        },
+        {
+          "id": "account-workflow",
+          "href": "#",
+          "imageSrc": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Blog Cover 2",
+          "tag": "Process",
+          "title": "Efficient Account Workflow Solutions",
+          "excerpt": "Streamlining complex processes into simple, intuitive digital workflows that increase productivity."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's create something great.",
+      "emailLabel": "Email us",
+      "email": "hello@zylo.com",
+      "phoneLabel": "Call us",
+      "phone": "+1 234 567 890"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "kicker": "WE ARE ZYLO",
+      "title": "ABOUT US",
+      "lede": "We are a collective of visionaries, designers, and strategists dedicated to redefining digital boundaries through bold creativity and technical precision.",
+      "body": "Founded in 2014, Zylo has grown from a small design boutique to a global partner for industry leaders. We believe that every pixel tells a story and every interaction is an opportunity for inspiration."
+    },
+    "journey": {
+      "title": "Our Journey",
+      "milestones": [
+        {
+          "year": "2014",
+          "title": "The Genesis",
+          "description": "Zylo was born in a small shared workspace in London with a mission to bring high-art aesthetics to the digital commercial world.",
+          "imageSrc": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Office Beginnings"
+        },
+        {
+          "year": "2019",
+          "title": "Global Expansion",
+          "description": "Opening our second studio in Tokyo allowed us to merge Eastern precision with Western experimental design philosophies.",
+          "imageSrc": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Team Collaboration"
+        },
+        {
+          "year": "2024",
+          "title": "Future Forward",
+          "description": "Today, we lead the industry in 3D web experiences and immersive digital storytelling for the world's most innovative brands.",
+          "imageSrc": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+          "imageAlt": "Modern Tech"
+        }
+      ]
+    },
+    "team": {
+      "kicker": "THE ARCHITECTS",
+      "title": "Meet The Visionaries",
+      "description": "A diverse team of experts united by a shared passion for aesthetic excellence.",
+      "members": [
+        {
+          "name": "Julian Varez",
+          "role": "Founder & Creative Director",
+          "imageSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "name": "Elena Rossi",
+          "role": "Head of Design",
+          "imageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "name": "Marcus Chen",
+          "role": "Lead Engineer",
+          "imageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+          "name": "Sarah Jenkins",
+          "role": "Brand Strategist",
+          "imageSrc": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800"
+        }
+      ]
+    },
+    "values": [
+      {
+        "icon": "lucide:flame",
+        "title": "Bold Innovation",
+        "description": "We don't follow trends; we set them. Our team is encouraged to break the rules to discover what's truly possible."
+      },
+      {
+        "icon": "lucide:layers",
+        "title": "Absolute Quality",
+        "description": "Excellence is in the details. From the first sketch to the final deployment, we obsess over every interaction."
+      },
+      {
+        "icon": "lucide:users",
+        "title": "Radical Empathy",
+        "description": "We design for humans. Understanding the user's emotional journey is the core of our strategic approach."
+      }
+    ],
+    "capabilities": {
+      "title": "Our Capabilities",
+      "description": "A comprehensive ecosystem of services to elevate your brand from concept to culture.",
+      "ctaLabel": "Download Deck",
+      "items": [
+        {
+          "index": "01.",
+          "title": "Visual Identity",
+          "description": "Brand architecture, logo design, typography, and motion guidelines."
+        },
+        {
+          "index": "02.",
+          "title": "Digital Product",
+          "description": "UX/UI design for mobile apps, SaaS platforms, and enterprise solutions."
+        },
+        {
+          "index": "03.",
+          "title": "Immersive Web",
+          "description": "3D web design, interactive storytelling, and high-performance development."
+        },
+        {
+          "index": "04.",
+          "title": "Creative Strategy",
+          "description": "Market analysis, user research, and long-term brand positioning."
+        }
+      ]
+    },
+    "cta": {
+      "title": "LET'S TALK",
+      "description": "Ready to start your journey into excellence? Reach out to our studio today.",
+      "buttonLabel": "Get in Touch",
+      "buttonHref": "/#contact"
+    }
+  },
+  "experiencePage": {
+    "hero": {
+      "kicker": "RESUME & CAREER",
+      "title": "EXPERIENCE",
+      "description": "A decade of bridging the gap between artistic vision and technical implementation, helping global brands reach their full digital potential."
+    },
+    "timeline": [
+      {
+        "date": "Jan 2022 — Present",
+        "role": "Lead Product Designer",
+        "company": "Creative Hub Studio",
+        "description": "Leading a team of 12 designers to deliver high-impact digital products for Fortune 500 clients. Specialized in architecting scalable design systems and mentoring junior talent.",
+        "tags": ["Design Systems", "Leadership", "UX Strategy"]
+      },
+      {
+        "date": "Aug 2019 — Dec 2021",
+        "role": "Senior UI/UX Engineer",
+        "company": "TechStack Solutions",
+        "description": "Bridged the gap between design and engineering. Built interactive dashboard components and led the migration to a component-driven development workflow using React.",
+        "tags": ["Frontend Dev", "Prototyping", "React.js"]
+      },
+      {
+        "date": "May 2017 — July 2019",
+        "role": "UI Designer",
+        "company": "Pixel Perfect Studio",
+        "description": "Crafted visual identities and mobile interfaces for early-stage startups. Focused on high-fidelity visual design and brand consistency across platforms.",
+        "tags": ["Visual Design", "Branding", "Mobile UI"]
+      }
+    ],
+    "skills": [
+      {
+        "group": "Design",
+        "items": ["UI/UX Design", "Design Systems", "Interaction Design", "Branding", "Motion Graphics"]
+      },
+      {
+        "group": "Technical",
+        "items": ["React / Next.js", "Tailwind CSS", "GSAP Animation", "TypeScript", "Node.js"]
+      },
+      {
+        "group": "Software",
+        "items": ["Figma", "Adobe Creative Suite", "Framer", "Webflow", "VS Code"]
+      }
+    ],
+    "education": [
+      {
+        "range": "2013 — 2017",
+        "title": "Bachelor of Fine Arts in Digital Design",
+        "place": "University of Arts & Technology, New York"
+      },
+      {
+        "range": "2011 — 2013",
+        "title": "Visual Communications Diploma",
+        "place": "Creative Arts Academy"
+      }
+    ],
+    "certifications": [
+      {
+        "year": "2023",
+        "title": "Google UX Design Professional",
+        "issuer": "Coursera Specialization"
+      },
+      {
+        "year": "2022",
+        "title": "Advanced Interaction Design",
+        "issuer": "Nielsen Norman Group (NN/g)"
+      }
+    ]
+  },
+  "worksPage": {
+    "hero": {
+      "kicker": "OUR PORTFOLIO",
+      "title": "WORKS_24",
+      "description": "Exploration of digital boundaries through award-winning design and technology solutions. Each project represents a unique journey of innovation."
+    },
+    "categories": [
+      { "id": "all", "label": "All Projects" },
+      { "id": "fintech", "label": "Fintech" },
+      { "id": "saas", "label": "SaaS" },
+      { "id": "design", "label": "Design" }
+    ],
+    "projects": [
+      {
+        "id": "p1",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&q=80&w=1600",
+        "title": "Etherium Financial Ecosystem",
+        "category": "fintech",
+        "categoryLabel": "Fintech App",
+        "year": "2024",
+        "meta": "Fintech App • 2024",
+        "colSpan": "lg:col-span-8",
+        "delayMs": 0
+      },
+      {
+        "id": "p2",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800",
+        "title": "Modular Workspace",
+        "category": "design",
+        "categoryLabel": "Modular Space",
+        "year": "2023",
+        "meta": "Modular Space • 2023",
+        "colSpan": "lg:col-span-4",
+        "delayMs": 100
+      },
+      {
+        "id": "p3",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+        "title": "Digital Pulse Dashboard",
+        "category": "saas",
+        "categoryLabel": "Analytics",
+        "year": "2024",
+        "meta": "Analytics • 2024",
+        "colSpan": "lg:col-span-4",
+        "delayMs": 200
+      },
+      {
+        "id": "p4",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1600",
+        "title": "Nova Retail Platform",
+        "category": "saas",
+        "categoryLabel": "E-commerce",
+        "year": "2023",
+        "meta": "E-commerce • 2023",
+        "colSpan": "lg:col-span-8",
+        "delayMs": 300
+      },
+      {
+        "id": "p5",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200",
+        "title": "Syncro Team Flow",
+        "category": "saas",
+        "categoryLabel": "Web Application",
+        "year": "2024",
+        "meta": "Web Application • 2024",
+        "colSpan": "lg:col-span-6",
+        "delayMs": 400
+      },
+      {
+        "id": "p6",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200",
+        "title": "Zenith Cloud Infrastructure",
+        "category": "fintech",
+        "categoryLabel": "SaaS Product",
+        "year": "2023",
+        "meta": "SaaS Product • 2023",
+        "colSpan": "lg:col-span-6",
+        "delayMs": 500
+      },
+      {
+        "id": "p7",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800",
+        "title": "Solara Energy Brand",
+        "category": "design",
+        "categoryLabel": "Branding",
+        "year": "2024",
+        "meta": "Branding • 2024",
+        "colSpan": "lg:col-span-4",
+        "delayMs": 0
+      },
+      {
+        "id": "p8",
+        "href": "#",
+        "imageSrc": "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&q=80&w=1600",
+        "title": "The VR Experience Hub",
+        "category": "design",
+        "categoryLabel": "Immersive Web",
+        "year": "2024",
+        "meta": "Immersive Web • 2024",
+        "colSpan": "lg:col-span-8",
+        "delayMs": 0
+      }
+    ],
+    "cta": {
+      "kicker": "READY TO START?",
+      "title": "Let's create something\nExtraordinary",
+      "buttonLabel": "Work With Us",
+      "buttonHref": "/#contact"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "kicker": "EDITORIAL SELECTION",
+      "title": "ARTICLES"
+    },
+    "featured": {
+      "href": "#",
+      "imageSrc": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1600",
+      "imageAlt": "Featured Article",
+      "badge": "Featured",
+      "category": "Design Thinking",
+      "date": "Oct 24, 2024",
+      "title": "The Future of Neomorphism in Interface Design",
+      "excerpt": "Exploring how the subtle play of shadows and light is evolving into a more functional and accessible design language for next-gen spatial OS.",
+      "author": {
+        "name": "Marcus Vancy",
+        "avatarSrc": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=200",
+        "meta": "8 min read"
+      }
+    },
+    "categories": ["all", "design", "development", "trends", "process"],
+    "posts": [
+      {
+        "id": "b1",
+        "href": "#",
+        "category": "process",
+        "categoryLabel": "Process",
+        "title": "Scaling Design Systems for Global Enterprise",
+        "description": "How to maintain consistency across thousands of pages and hundreds of unique digital products.",
+        "imageSrc": "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=800",
+        "delayMs": 0
+      },
+      {
+        "id": "b2",
+        "href": "#",
+        "category": "development",
+        "categoryLabel": "Development",
+        "title": "Optimizing React Performance for Visual Heaviness",
+        "description": "Technical strategies for handling complex animations and high-res imagery without lag.",
+        "imageSrc": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+        "delayMs": 100
+      },
+      {
+        "id": "b3",
+        "href": "#",
+        "category": "design",
+        "categoryLabel": "Design",
+        "title": "Minimalism: The Art of Knowing What to Remove",
+        "description": "Exploring why the most impactful interfaces are often the ones with the fewest elements.",
+        "imageSrc": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&q=80&w=800",
+        "delayMs": 200
+      },
+      {
+        "id": "b4",
+        "href": "#",
+        "category": "trends",
+        "categoryLabel": "Trends",
+        "title": "Web Animation API vs Framer Motion in 2024",
+        "description": "A deep dive into which animation library reigns supreme for modern high-end web experiences.",
+        "imageSrc": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+        "delayMs": 0
+      },
+      {
+        "id": "b5",
+        "href": "#",
+        "category": "process",
+        "categoryLabel": "Process",
+        "title": "The Real Business Value of Design Thinking",
+        "description": "Moving beyond aesthetics to solve actual business problems and improve conversion rates.",
+        "imageSrc": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800",
+        "delayMs": 100
+      },
+      {
+        "id": "b6",
+        "href": "#",
+        "category": "design",
+        "categoryLabel": "Design",
+        "title": "Typography as the Soul of Digital Products",
+        "description": "Choosing the right font pairings to establish brand identity and emotional connection.",
+        "imageSrc": "https://images.unsplash.com/photo-1543167601-5219353412c0?auto=format&fit=crop&q=80&w=800",
+        "delayMs": 200
+      }
+    ],
+    "pagination": {
+      "pages": [1, 2, 3],
+      "active": 1
+    }
+  }
+}

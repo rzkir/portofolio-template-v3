@@ -1,0 +1,69 @@
+---
+type Props = {
+  activeItem?: "home" | "about" | "works" | "blog" | "contact" | "experience";
+  brandHref?: string;
+  homeHref?: string;
+  aboutHref?: string;
+  worksHref?: string;
+  blogHref?: string;
+  contactHref?: string;
+};
+
+const {
+  activeItem,
+  brandHref = "/",
+  homeHref = "/",
+  aboutHref = "/about",
+  worksHref = "/works",
+  blogHref = "/blog",
+  contactHref = "/#contact",
+} = Astro.props;
+---
+
+<nav
+  data-site-nav
+  class="fixed top-0 z-50 w-full transition-all duration-500 mix-blend-difference"
+>
+  <div
+    data-site-nav-inner
+    class="mx-auto flex w-full max-w-7xl items-center justify-between px-8 py-10 transition-all duration-500"
+  >
+    <div class="flex items-center gap-2">
+      <span class="h-3 w-3 rounded-full bg-white"></span>
+      <a href={brandHref} class="text-2xl font-bold tracking-tighter text-white"
+        >Zylo</a
+      >
+    </div>
+    <div class="hidden items-center gap-12 md:flex">
+      <a
+        href={homeHref}
+        class:list={["nav-link", activeItem === "home" && "opacity-50"]}>Home</a
+      >
+      <a
+        href={aboutHref}
+        class:list={["nav-link", activeItem === "about" && "opacity-50"]}
+        >About</a
+      >
+      <a
+        href={worksHref}
+        class:list={["nav-link", activeItem === "works" && "opacity-50"]}
+        >Works</a
+      >
+      <a
+        href={blogHref}
+        class:list={["nav-link", activeItem === "blog" && "opacity-50"]}>Blog</a
+      >
+      <a
+        href={contactHref}
+        class:list={["nav-link", activeItem === "contact" && "opacity-50"]}
+        >Contact</a
+      >
+    </div>
+    <div class="flex items-center gap-6 text-white">
+      <iconify-icon icon="lucide:search" class="cursor-pointer text-xl"
+      ></iconify-icon>
+      <iconify-icon icon="lucide:menu" class="cursor-pointer text-2xl"
+      ></iconify-icon>
+    </div>
+  </div>
+</nav>
